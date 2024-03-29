@@ -13,4 +13,3 @@ The Wave Function Collapse algorithm is a method for generating patterns that sa
 - Generate patterns using the Wave Function Collapse algorithm.
 - Visualize the evolution of the pattern generation process.
 - Define custom tile sets and constraints.
-- Interactive interface for exploring different configurations.
