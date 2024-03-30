@@ -1,3 +1,4 @@
+import time
 from typing import List
 
 import pygame
@@ -69,7 +70,12 @@ class Grid:
         filled_coordinates = [(0, 0)]
         frontier = get_frontier(self.grid, filled_coordinates)
 
+        pause = True
+
         while frontier:
+            if pause:
+                time.sleep(10)
+            pause = False
             frontier = get_frontier(self.grid, filled_coordinates)
             random_frontier_coordinates = frontier.pop(
                 random.randint(0, len(frontier) - 1))

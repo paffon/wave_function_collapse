@@ -10,7 +10,6 @@ def draw(width: int, height: int, cube_size: int,
 
     grid = Grid(cube_size, cubes_per_tile_side)
     grid.fill_grid(screen, rows, cols)
-    # grid.draw(screen)
 
     running = True
     while running:
